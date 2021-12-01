@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+li,
+a,
+button {
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.logo {
+  flex: 1;
+  font-family: "Mukta", sans-serif;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 10px;
+  color: black;
+}
+
+.nav_list li {
+  display: inline-block;
+  padding: 0px 0px;
+}
+.nav_list li:last-child {
+  padding-left: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+  }
+
+  .logo {
+    padding: 0 0 0 8px;
+  }
+
+  .nav_list li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+}
+
+button {
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  padding: 4px 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+.nav_list {
+  list-style: none;
+}
+
+.nav_list li a {
+  transition: all 0.3 ease 0s;
+}
+.nav_list li a:hover {
+  color: grey;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+  display: flex;
+  position: relative;
+  margin-top: -1px;
+}
+
+.h3 {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 8px;
+}
+
+.h2 {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  
+  .h3 {
+    position: absolute;
+    right: 0;
+    padding: 115px 163px 0 0;
+    max-width: 100%;
+  }
+  
+  .h2 {
+    position: absolute;
+    left: 0;
+    padding: 115px 0 0 163px;
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+}
+
+.grid_monkeys {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  padding: 8px
+}
+
+@media screen and (min-width: 800px) {
+  .grid_monkeys {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+    padding: 160px;
+    
+  }
+}
+
+.border {
+  border: 6px solid #ccc;
+  border-bottom: 20px solid #ccc;
+  border-radius: 14px;
+  max-width: 100%;
+  background-color: #ccc;
+  max-height: 100%;
+}
+.border img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  background-color: #ccc;
+}
+
+.border p {
+  text-align: center;
+  background-color: #ccc;
+  margin-top: 10px;
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 16.5px;
+  font-weight: 385;
+}
+
+
+.best_nft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.best_nft h1 {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 20px;
+}
+.best_nft h2 {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 15px;
+  font-weight: 350;
+}
+
+@media screen and (min-width: 800px) {
+    .best_nft {
+      display: block;
+    }
+  .best_nft h1 {
+    left: 0;
+  
+    position: absolute;
+    padding: 0px 0 0 150px;
+    margin-top: 2.5%;
+  }
+  .best_nft h2 {
+    left: 0;
+  
+    position: absolute;
+    padding: 0px 0 0 150px;
+    margin-top: 2%;
+  }
+
+}
+
+
+
+input[type="text"] {
+  width: 400px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.svg");
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.search {
+  padding: 0 0 0 968px;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+      margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+      white-space: nowrap;
+  }
+  
+}
+
+
+
+tbody p {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 15px;
+  font-weight: 350;
+  padding: 4px 10px 5px 15px;
+}
+
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+}
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 360;
+}
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+  background-color: #dfdfdf;
+  color: #a09c9c;
+  font-weight: 100;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #dfdbdb;
+}
+
+
+
+.tabel-img {
+  display: flex;
+  max-width: 100%;
+  height: 73px;
+}
+.vote-button {
+  background-color: #4a4a4a;
+  color: white;
+  border-style: none;
+  border-radius: 20px;
+  height: 30px;
+  font-size: 8px;
+  font-weight: 300;
+}
+.table-principal {
+  width: 100%;
+  display: table;
+}
+
+.etherum {
+  width: 20px;
+  height: 20px;
+}
+
+
+footer {
+  display: flex;
+  width: auto;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #4a4a4a;
+}
+
+footer li {
+  background-color: #4a4a4a;
+
+  padding: 35px 10px 25px 150px;
+}
+
+.termene {
+  font-weight: 235;
+  padding: 0 50px 50px 150px;
+  word-spacing: 50%;
+  font-family: "M PLUS 2", sans-serif;
+  color: white;
+}
+.sigla {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.conditii {
+  background-color: #4a4a4a;
+}
+
+.copyright {
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 12px;
+  padding: 95px 0 0 340px;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 235;
+}
+
+.lista2 {
+  background-color: #4a4a4a;
+}
+
+.lista2 p {
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 15px;
+  padding: 35px 0 0 230px;
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 235;
+  word-spacing: 30px;
+}
+
+.lista2 i {
+  background-color: #4a4a4a;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+.iconite {
+  background-color: #4a4a4a;
+  padding: 50px 0 0 330px;
+}

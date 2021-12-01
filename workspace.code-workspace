@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\ProiecteVSC"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "freecodecamp"
+	}
+}
